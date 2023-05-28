@@ -2,9 +2,10 @@
 FROM node:18-alpine
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copiamos todos los archivos del proyecto al directorio de trabajo
+COPY package*.json ./
 COPY . .
 
 # Instalamos las dependencias y compilamos el proyecto
