@@ -9,4 +9,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    apiSecret: '',
+    public: {
+      apiBase: ''
+    }
+  }
 })

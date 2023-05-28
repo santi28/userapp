@@ -19,6 +19,8 @@
 
 <script setup>
 import { ref } from 'vue'
+const config = useRuntimeConfig()
+const api = config.public.apiBase;
 
 const name = ref('Santiago de Nicolás')
 const age = ref(22)
@@ -26,7 +28,9 @@ const age = ref(22)
 async function addPerson() {
   console.log('Agregando persona...')
 
-  const response = await fetch('http://localhost:3000/people', {
+  const response = await fetch(
+    `${api}/people`,
+    {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
