@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col max-w-2xl p-4 m-auto">
     <Header></Header>
-    <span class="p-4 border text-sky-50 bg-sky-700 border-neutral-300 rounded-xl box">
+    <span class="p-4 border bg-sky-50 text-sky-700 border-sky-300 rounded-xl box">
       <strong>Requesting to:</strong> {{ api }}
     </span>
     <ul class="mt-2">
