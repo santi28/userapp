@@ -10,7 +10,6 @@ COPY . .
 
 # Instalamos las dependencias y compilamos el proyecto
 RUN npm install
-RUN npm run build
 
 # Exponemos el puerto 3000
 EXPOSE 3000
