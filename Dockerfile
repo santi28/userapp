@@ -8,9 +8,6 @@ WORKDIR /app
 COPY package*.json ./
 COPY . .
 
-# Instalamos las dependencias y compilamos el proyecto
-RUN npm install
-
 # Exponemos el puerto 3000
 EXPOSE 3000
 
