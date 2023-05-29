@@ -1,11 +1,11 @@
 <template>
-  <div class="p-4 max-w-2xl m-auto flex flex-col">
+  <div class="flex flex-col max-w-2xl p-4 m-auto">
     <Header></Header>
-    <span class="bg-neutral-50 border border-neutral-300 rounded-xl p-4 box">
+    <span class="p-4 border text-sky-50 bg-sky-700 border-neutral-300 rounded-xl box">
       <strong>Requesting to:</strong> {{ api }}
     </span>
     <ul class="mt-2">
-      <li v-for="person in people" :key="person._id" class="bg-white border p-4 mb-2 rounded-xl hover:bg-neutral-100">
+      <li v-for="person in people" :key="person._id" class="p-4 mb-2 bg-white border rounded-xl hover:bg-neutral-100">
         <strong>{{ person.name }}</strong> ({{ person.age }} años)
       </li>
     </ul>
